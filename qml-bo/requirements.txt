@@ -2,3 +2,4 @@ pennylane>=0.20.0
 matplotlib
 jax
 jaxlib
+pytest

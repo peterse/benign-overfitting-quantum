@@ -79,33 +79,6 @@ def get_fourier_coeffs(Gamma, frequency_spectrum):
     return dict(out)
 
 
-def get_function_alignment(Gamma, M, frequency_spectrum):
-    """Compute the alignment coefficients for a 1-layer model.
-
-    Similarly to the Fourier coefficients, we define the "allignment" to be the
-    the coefficient of f(x) associated with each Fourier basis function.
-
-    f'(ω) = \sum_{j, k: λ_j - λ_k} γ_j* γ_k M_{jk}
-
-    Args:
-        Gamma: Complex np.ndarray with shape `(d,)`
-        M: Complex, hermitian np.ndarray with shape `(d, d)`
-        frequency_spectrum: Dictionary of frequencies and matched index pairs to
-         recover the indices associated with each frequency.
-
-    Returns:
-        Dictionary of the form: `{ω: f'(ω)}` mapping frequencies to alingment
-    """
-    assert M.shape == (len(Gamma), len(Gamma))
-
-    out = defaultdict(complex)
-    for freq, locs in frequency_spectrum.items():
-        for (j, k) in locs:
-            out[freq] += np.conj(Gamma[j]) * Gamma[k] * M[j, k]
-
-    return dict(out)
-
-
 def get_model_nu_opt(spec, state):
     """Compute nu_opt for a given model with respect to an input state
 
