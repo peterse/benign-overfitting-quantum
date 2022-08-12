@@ -1,7 +1,6 @@
 """A collection of models giving rise to different kernels."""
 from abc import ABCMeta, abstractmethod, abstractproperty
 
-# from pennylane import numpy as np
 import numpy as np
 import pennylane as qml
 import jax
