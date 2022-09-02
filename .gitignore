@@ -1,1 +1,4 @@
 *.npy
+qml-bo/qmlbo.egg-info/*
+qml-bo/__pycache__/*
+*.pyc
