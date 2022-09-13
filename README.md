@@ -1,6 +1,6 @@
 This repository contains code to accompany the publication
 
-Evan Peters and Maria Schuld. “Good generalization with overparameterized quantum machine learning models via benign overfitting”. arXiv: [quant-ph] (Aug. 2022).
+Evan Peters and Maria Schuld. “Generalization despite overfitting in quantum machine learning models”. arXiv: [quant-ph] (Sep. 2022).
 
 Each notebook reproduces a figure from the above manuscript. Interested readers should refer to the article to learn more.
 
