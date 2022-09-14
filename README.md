@@ -1,6 +1,6 @@
 This repository contains code to accompany the publication
 
-Evan Peters and Maria Schuld. “Generalization despite overfitting in quantum machine learning models”. arXiv: [quant-ph] (Sep. 2022).
+Evan Peters and Maria Schuld. “Generalization despite overfitting in quantum machine learning models”. [arXiv:2209.05523](https://arxiv.org/abs/2209.05523) [quant-ph] (Sep. 2022).
 
 Each notebook reproduces a figure from the above manuscript. Interested readers should refer to the article to learn more.
 
